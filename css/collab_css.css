@@ -1,0 +1,14 @@
+body {
+  background: #9bffc1;
+}
+
+header {
+  background-color: #323e51;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  font-family: Georgia, Palatino, serif;
+  font-size: 60px;
+  height: 60px;
+  padding: 5px;
+}
+
