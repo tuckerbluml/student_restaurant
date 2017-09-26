@@ -1,0 +1,11 @@
+body {
+  background: #FFCC33;
+  -webkit-animation: mymove 13s; 
+  animation: mymove 13s infinite;
+}
+@-webkit-keyframes mymove {
+    50% {background-color: black;}
+}
+@keyframes mymove {
+    50% {background-color: black;}
+}
