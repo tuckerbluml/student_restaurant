@@ -2,55 +2,124 @@
 <!--Tucker-->
 <html lang="en">
 
-<header>
-  <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/collab_css.css">
+    <title>Bar &amp; Grill</title>
+    <style>
+      body {
+        padding: none;
+        margin: 0;
+      }
 
-   <!-- This points us to the css sheet. -->
-  <link rel="stylesheet" type="text/css" href="C:\Users\Kosta Hidri\Documents\student_restaurant\css\collab_css.css">
+      .container {
+        text-align: center;
+      }
 
-  <title>Bar &amp; Grill</title>
+      .container div {
+        padding: 20px;
+      }
 
-</header>
-<body>
+      #menu {
+        height: 50px;
+        width: 100%;
+        text-align: center;
+        background-color: #1BA5B8;
+      }
 
-	<a href="index.html">
+      ul.naviagation {
 
-<div class="image123">
-    <div class="imgContainer">
-        <img id="first" src="C:\Users\Kosta Hidri\Documents\student_restaurant\images\burger.png" height="200" width="200"/>
+      }
+
+      ul.navigation li {
+        display: inline;
+        padding: 20px;
+      }
+
+      ul.navigation a {
+        font-size: 20px;
+        text-decoration: none;
+        color: black;
+      }
+
+      ul.navigation a.active {
+        color: red;
+      }
+
+      ul.navigation a:hover {
+        color: white;
+      }
+
+      #about {
+        border: 5px solid #DAECF3;
+        text-align: center;
+        display: inline-block;
+      }
+
+      #about h1 {
+
+      }
+
+      div.text-container {
+        margin: auto;
+        width: 60%;
+      }
+
+      table {
+        margin: 0 auto;
+        border-collapse: collapse;
+      }
+      th {
+        font-size: 20px;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+      }
+      td {
+        font-size: 20px;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+
+      <div id="menu">
+      	 <ul class="navigation">
+      	  <li><a class="active" href="index.html">Home</a></li>
+      	  <li><a href="menu.html">Menu</a></li>
+      	  <li><a href="directions.html">Direction/Hours</a></li>
+      	  <li><a href="photos.html">Photos</a></li>
+      	  <li><a href="about.html">About</a></li>
+      	  <li><a href="specials.html">Specials</a></li>
+      	</ul>
+      </div>
+
+      <div id="logo">
+      	<a href="index.html">
+          <img src="../images/burger.png" alt="burger.png">
+        </a>
+      </div>
+
+      <div id="about">
+      	<h1>About Us</h1>
+        <div class="text-container">
+      	   Our food is inspired by the college in this town. We have college kids around us, so we have exactly the type of food they want! We make some of the best burgers and steaks in town. We use our special in house rub on all our meats. We also have very crispy chicken from secrect batter we use. Our restaurant also has imported beers for anyone looking to be adverturous with their alcohol.
+        </div>
+      </div>
+
+      <div class="text-container">
+        <img src="../images/contact.png" alt="contact.png">
+      </div>
+
     </div>
 
-    <div class="imgContainer">
-        <img id="second" class="middle-img" src="C:\Users\Kosta Hidri\Documents\student_restaurant\images\batter.png" height="200" width="200"/>
-    </div>
+    <footer>
+      <p>Posted by: Student's Bar &amp; Grill</p>
+      <p>Contact information: 515 961 1411</p>
+    </footer>
 
-    <div class="imgContainer">
-         <img id="third" src="C:\Users\Kosta Hidri\Documents\student_restaurant\images\chicken_wing.png" height="200" width="200"/>
-    </div>
-</div>
+  </body>
 
-  </a>
-
-	 <ul>
-	  <li><a href="index.html">Index</a></li>
-	  <li><a href="menu.html">Menu</a></li>
-	  <li><a href="directions.html">Direction/Hours</a></li>
-	  <li><a href="photos.hmtl">Photos</a></li>
-	  <li><a href="about.html">About</a></li>
-	  <li><a href="specials.html">Specials</a></li>
-	</ul>
-
-	<h1> A little about us:</h1>
-
-	<p>Our food is inspired by the college in this town. We have college kids around us, so we have exactly the type of food they want! We make some of the best burgers and steaks in town. We use our special in house rub on all our meats. We also have very crispy chicken from secrect batter we use. Our restaurant also has imported beers for anyone looking to be adverturous with their alcohol.</p>	
-
-<img src="C:\Users\Kosta Hidri\Documents\student_restaurant\images\contact.png" alt="contact.png">
-
-
-
-<footer>
-  <p>Posted by: Student's Bar &amp; Grill</p>
-  <p>Contact information: 515 961 1411</p>
-</footer>
-</body>
 </html>
