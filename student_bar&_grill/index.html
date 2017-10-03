@@ -80,37 +80,37 @@
         text-align: center;
         border-bottom: 1px solid #ddd;
       }
+
     </style>
   </head>
 
   <body>
 
-    <!-- Main content -->
-    <div class="container">
-        <h1>Example 2</h1>
+      <!-- Main content -->
+      <div class="header">
+      <h1>Chania</h1>
+      </div>
 
-        <p>Bootstrap has a 12 column layout. We now have two divs that each take
-        6 columns. Therefore they always take half the screen, and appear
-        side-by-side.</p>
+      <div class="row">
 
-        <div class="mycolor col-xs-6">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </div>
+      <div class="col-xs-3 menu">
+      <ul>
+      <li>Our Roots</li>
+      <li>Our Culture</li>
+      <li>The Lifestyle</li>
+      <li>The Goal</li>
+      </ul>
+      </div>
 
-        <div class="mycolor col-xs-6">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </div>
-    </div>
+      <div class="col-xs-9">
+      <h1>The History</h1>
+      <p>The more time you spend here at our restaurants, the more time you'll be able to understand why customer service and customer relationships
+      are so very important to us.</p>
+      <p>As we take you on our journey that once begun in small town Indianola, we'll show you how we progressed to a small diner, to a large franchise
+      that is still continuing to expand.</p>
+      </div>
+      </div>
+
 
     <!-- Navigation Bar -->
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -148,6 +148,13 @@
       </div>
     </div>
 
+    <div class="jumbotron">
+  <h1>Why we're the best!</h1>
+  <p>All of our ingredients are grown in our gardens outside each of our restaurants. Not only is everything grown
+  by us, we also import our meat, fish, spices and many other things that go towards our menu!</p>
+    </div>
+    <div class="container">
+</div>
     <!-- dont use this for now
     <div class="container">
 
@@ -168,6 +175,36 @@
         </a>
       </div>
 
+      <div class="container">
+  <h2>Some of our parterning restaurants!</h2>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Retarurant Name</th>
+        <th>City</th>
+        <th>State</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Bar &amp; Grill OutBack</td>
+        <td>Manhattan</td>
+        <td>New York</td>
+      </tr>
+      <tr>
+        <td>Bar &amp; Grill Seafood</td>
+        <td>Los Angeles</td>
+        <td>California</td>
+      </tr>
+      <tr>
+        <td>Bar &amp; Grill Buffet</td>
+        <td>San Antonio</td>
+        <td>Texas</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
       <div id="about">
       	<h1>About Us</h1>
         <div class="text-container">
@@ -180,6 +217,25 @@
       </div>
 
     </div>
+
+    <form>
+  <div class="form-group">
+    <label for="email">Email address:</label>
+    <input type="email" class="form-control" id="email">
+  </div>
+  <div class="form-group">
+    <label for="pwd">Password:</label>
+    <input type="password" class="form-control" id="pwd">
+  </div>
+  <div class="checkbox">
+    <div class="alert alert-warning">
+      <strong>Warning!</strong> Are you sure you want to be rememebered?
+    </div>
+    <label><input type="checkbox"> Remember me</label>
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+
 
     <footer>
       <p>Posted by: Student's Bar &amp; Grill</p>
