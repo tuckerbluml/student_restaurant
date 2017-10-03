@@ -6,9 +6,107 @@
 <head>
 
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
 
-  <title>Bar & Grill</title>
+<style>
+.container {
+        background-color: #333333;
+        border-style: solid;
+        border-width: 1px;
+      }
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
 
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: underline;
+}
+p.one {text-align: center;
+    color: black; 
+    background-color:DarkOrange; 
+    border:2px solid Black;
+    border-style: solid;
+    font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+p.two {text-align: center;
+    color: black; 
+    background-color:DarkOrange; 
+    border:2px solid Black;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 400px;
+    margin-left: 400px;
+}
+p.three {text-align: center;
+    color: black;
+    background-color:DarkOrange; 
+    border:2px solid Black;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    margin-right: 500px;
+    margin-left: 500px;
+    min-width: 520px;
+    height: 20px
+}
+ul.one {list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111111;
+}
+ul.two {background-color:DarkOrange; 
+    border:2px solid Black;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-right: 1200px;
+    margin-left: 0px;
+    min-width: 180px;
+    height: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h6.one{color: white;}
+h3.one{color: white;}
+p.four{color: white;}
+li.one{padding: 0.0cm 0.7cm}
+table {
+    border-collapse: collapse;
+     width: 100%;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+</style>
 </head>
 
 
@@ -17,31 +115,90 @@
   <a href="index.html">
   <img alt="logo" src="logo.png">
   </a>
+  <nav class="navbar navbar-inverse navbar-fixed-middle">
+      <div class="container col-xs-12">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
 
-   <ul>
-    <li><a href="index.html">Index</a></li>
-    <li><a href="menu.html">Menu</a></li>
-    <li><a href="directions.html">Direction/Hours</a></li>
-    <li><a href="photos.hmtl">Photos</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="specials.html">Specials</a></li>
-    <li><a href="login.html">Login</a></li>
-    <li><a href="sign-up.html">Sign-up</a></li>
-  </ul>
+            <!-- Three line "hamburger" icon for the collapsed navigation -->
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <!-- Title on nav bar -->
+          <a class="navbar-brand" href="#">B & G</a>
+        </div>
+
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul>
+                <li><a href="index.html">Index</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="directions.html">Direction/Hours</a></li>
+                <li><a href="photos.hmtl">Photos</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="specials.html">Specials</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="sign-up.html">Sign-up</a></li>
+            </ul>
+        </div>
+      </div>
+  </nav>
+  
+  <div class="container">
+    <!-- This container moves below the menu bar -->
+    <div class="below_menu_container">
+    </div>
+  </div>
+    
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   
   <h2>Directions</h2>
   <p>We are located in McNeill Hall at Simpson College. Our hours are as Follows</p>
 
   <h2>Hours</h2>
-  <ul>
-      <li>Sunday 12:00pm-8:00pm</li>
-      <li>Monday 10:00am-10:00pm</li>
-      <li>Tuesday 10:00am-10:00pm</li>
-      <li>Wednesday 10:00am-10:00pm</li>
-      <li>Thursday 10:00am-10:00pm</li>
-      <li>Friday 10:00am-10:00pm</li>
-      <li>Saturday 10:00am-1:00am</li>
-    </ul>
+  
+  <table class="table table-hover">
+    <thead>
+      <tr class="warning">
+        <th>Day</th>
+        <td>Sunday</td>
+        <td>Monday</td>
+        <td>Tuesday</td>
+        <td>Wednesday</td>
+        <td>Thursday</td>
+        <td>Friday</td>
+        <td>Saturday</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>From</th>
+        <td class="info">12:00PM</td>
+        <td class="info">10:00AM</td>
+        <td class="info">10:00AM</td>
+        <td class="info">10:00AM</td>
+        <td class="info">10:00AM</td>
+        <td class="info">10:00AM</td>
+        <td class="info">10:00AM</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th>To</th>
+        <td class="success">8:00PM</td>
+        <td class="success">10:00PM</td>
+        <td class="success">10:00PM</td>
+        <td class="success">10:00PM</td>
+        <td class="success">10:00PM</td>
+        <td class="success">10:00PM</td>
+        <td class="success">1:00AM</td>
+      </tr>
+    </tfoot>
+  </table>
+  
 <footer>
   <p>Posted by: Student's Bar & Grill</p>
   <p>Contact information: 515 961 1411</p>

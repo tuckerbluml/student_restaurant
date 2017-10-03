@@ -6,8 +6,18 @@
 <head>
   
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
 
 <style>
+.container {
+        background-color: #333333;
+        border-style: solid;
+        border-width: 1px;
+      }
 a:link {
     text-decoration: none;
 }
@@ -16,7 +26,7 @@ a:visited {
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 a:active {
@@ -51,16 +61,27 @@ p.three {text-align: center;
     min-width: 520px;
     height: 20px
 }
-ul.one {background-color:DarkOrange; 
-    border:2px solid Black;
-    border-radius: 10px;
-    margin-top: 10px;
-    margin-bottom: 0px;
-    margin-right: 1200px;
-    margin-left: 0px;
-    min-width: 180px;
-    height: 160px;
+ul.one {list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
     font-family: Arial, Helvetica, sans-serif;
+}
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111111;
 }
 ul.two {background-color:DarkOrange; 
     border:2px solid Black;
@@ -76,6 +97,7 @@ ul.two {background-color:DarkOrange;
 h6.one{color: white;}
 h3.one{color: white;}
 p.four{color: white;}
+li.one{padding: 0.0cm 0.7cm}
 </style>
 <link rel="stylesheet" type="text/css" href="css/about.css">
   <title>Bar & Grill</title>
@@ -86,17 +108,47 @@ p.four{color: white;}
  <a href="index.html">
   <img alt="logo" src="logo.png">
   </a>
+  
+  <nav class="navbar navbar-inverse navbar-fixed-middle">
+      <div class="container col-xs-12">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
 
-   <ul class="one">
-    <li><a href="index.html">Index</a></li>
-    <li><a href="menu.html">Menu</a></li>
-    <li><a href="directions.html">Direction/Hours</a></li>
-    <li><a href="photos.hmtl">Photos</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="specials.html">Specials</a></li>
-    <li><a href="login.html">Login</a></li>
-    <li><a href="sign-up.html">Sign-up</a></li>
-  </ul>
+            <!-- Three line "hamburger" icon for the collapsed navigation -->
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <!-- Title on nav bar -->
+          <a class="navbar-brand" href="#">B & G</a>
+        </div>
+
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="one">
+            <li><a href="index.html">Index</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="directions.html">Direction/Hours</a></li>
+            <li><a href="photos.hmtl">Photos</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="specials.html">Specials</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="sign-up.html">Sign-up</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <div class="container">
+      <!-- This container moves below the menu bar -->
+      <div class="below_menu_container">
+      </div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 
   <h3 class="one">Appetizers</h3>
   <ul class="two">
@@ -119,22 +171,21 @@ p.four{color: white;}
   <h3 class="one">Desserts</h3>
   <ul class="two">
     <li>Ice Cream Sundae</li>
-    <li>Apple Pie</li>
-    <li>Brownie</li>
+    <li class="one">Apple Pie</li>
+    <li class="one">Brownie</li>
     <li>Cheesecake</li>
     <li>Strawberry Shortcake</li>
   </ul>
 
   <h3 class="one">Drinks</h3>
   <ul class="two">
-    <li>Soda</li>
-    <li>Water</li>
-    <li>Tea</li>
-    <li>Lemonade</li>
-    <li>Beer</li>
+    <li class="one">Soda</li>
+    <li class="one">Water</li>
+    <li class="one">Tea</li>
+    <li class="one">Lemonade</li>
+    <li class="one">Beer</li>
   </ul>
-
-
+  
 <footer>
   <p class="four">Posted by: Student's Bar & Grill</p>
   <p class="four">Contact information: 515 961 1411</p>
